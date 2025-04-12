@@ -1,0 +1,8 @@
+version: '3.8'
+
+services:
+  simple-service:
+    build: .
+    image: simple-service:latest
+    ports:
+      - "8111:8111"
