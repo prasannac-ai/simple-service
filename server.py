@@ -9,3 +9,4 @@ async def root():
 @restapp.get("/health")
 async def health():
     return {"status": "healthy"}
+
