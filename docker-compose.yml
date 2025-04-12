@@ -5,7 +5,7 @@ services:
     build: .
     image: simple-service:latest
     ports:
-      - "8111"
+      - "8111:8111"
   nginx:
     build:
       context: .
