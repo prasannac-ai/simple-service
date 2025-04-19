@@ -17,3 +17,9 @@ spec:
           image: local-registry:5000/simple-service:v1
           ports:
             - containerPort: 8111
+          # resources:
+          #   requests:
+          #     cpu: "1"
+          #   limits:
+          #     cpu: "1"
+          #stress-ng --cpu 2 --cpu-load 80 --timeout 180s
