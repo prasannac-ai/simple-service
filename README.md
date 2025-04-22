@@ -61,7 +61,13 @@ docker compose down
 
 ### Portforward for nginx
 ```bash
-kubectl port-forward -n ingress-nginx svc/ingress-nginx-controller 8080:80
+kubectl port-forward -n ingress-nginx svc/ingress-nginx-controller 8088:80
+```
+### Deploy services
+```bash
+kubectl apply -f simple-service-deployment.yaml
+kubectl apply -f simple-service-deployment.yaml
+kubectl apply -f ingress.yml 
 ```
 
 ##  Swagger UI
