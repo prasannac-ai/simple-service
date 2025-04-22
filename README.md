@@ -40,7 +40,12 @@ docker run -d -p 5001:5000 --name local-registry --restart=always registry:2
 ```bash
 docker tag  simple-service:v2 localhost:5001/simple-service:v2
 docker push localhost:5001/simple-service:v2
+```
 
+### Load the image to kind
+use this if you don't want to use local registry 
+```bash
+kind load docker-image <image name>
 ```
 
 ### Compose up
