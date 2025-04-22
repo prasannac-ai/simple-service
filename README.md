@@ -66,7 +66,7 @@ kubectl port-forward -n ingress-nginx svc/ingress-nginx-controller 8088:80
 ### Deploy services
 ```bash
 kubectl apply -f simple-service-deployment.yaml
-kubectl apply -f simple-service-deployment.yaml
+kubectl apply -f simple-service-svc.yaml
 kubectl apply -f ingress.yml 
 ```
 
