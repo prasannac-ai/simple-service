@@ -32,6 +32,13 @@ docker run -p 8111:8111 simple-service
 docker build -t simple-service:v2 .
 ```
 
+### Label and push versioned image to repository 
+```bash
+docker tag  simple-service:v2 localhost:5001/simple-service:v2
+docker push localhost:5001/simple-service:v2
+
+```
+
 ### Compose up
 ```bash
 docker compose up
