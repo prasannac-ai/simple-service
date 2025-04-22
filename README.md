@@ -95,3 +95,7 @@ FastAPI automatically generates Swagger UI at:
 - [http://localhost:8111/docs](http://localhost:8111/docs) → Swagger UI (interactive)
 - [http://localhost:8111/redoc](http://localhost:8111/redoc) → ReDoc UI (alternative style)
 - [http://localhost:8111/openapi.json](http://localhost:8111/openapi.json) → Raw OpenAPI schema
+
+## Important Note
+
+This codebase is intentionally designed with bugs and imperfections to serve as a learning tool. The purpose is to encourage debugging, problem-solving, and critical thinking as part of the workshop exercises. Please keep this in mind while working through the code
