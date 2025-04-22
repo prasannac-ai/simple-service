@@ -63,15 +63,19 @@ docker ps
 docker compose down
 ```
 
-### Portforward for nginx
+### Create Cluster
 ```bash
-kubectl port-forward -n ingress-nginx svc/ingress-nginx-controller 8088:80
+kind create cluster --config kind-config.yml
 ```
 ### Deploy services
 ```bash
 kubectl apply -f simple-service-deployment.yaml
 kubectl apply -f simple-service-svc.yaml
 kubectl apply -f ingress.yml 
+```
+### Portforward for nginx
+```bash
+kubectl port-forward -n ingress-nginx svc/ingress-nginx-controller 8088:80
 ```
 
 ##  Swagger UI
