@@ -52,6 +52,11 @@ docker ps
 docker compose down
 ```
 
+### Portforward for nginx
+```bash
+kubectl port-forward -n ingress-nginx svc/ingress-nginx-controller 8080:80
+```
+
 ##  Swagger UI
 
 FastAPI automatically generates Swagger UI at:
