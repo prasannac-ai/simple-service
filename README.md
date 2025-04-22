@@ -42,6 +42,11 @@ docker tag  simple-service:v2 localhost:5001/simple-service:v2
 docker push localhost:5001/simple-service:v2
 ```
 
+### Look for images in registry
+```bash
+curl http://localhost:5001/v2/_catalog
+```
+
 ### Load the image to kind
 use this if you don't want to use local registry 
 ```bash
