@@ -31,6 +31,10 @@ docker run -p 8111:8111 simple-service
 ```bash
 docker build -t simple-service:v2 .
 ```
+### Create Local Registry 
+```bash
+docker run -d -p 5001:5000 --name local-registry --restart=always registry:2
+```
 
 ### Label and push versioned image to repository 
 ```bash
