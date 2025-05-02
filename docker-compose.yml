@@ -12,6 +12,11 @@ services:
       dockerfile: Dockerfile.nginx
     ports:
       - "8080:80"
-    
+  ui:
+    build:
+      context: .
+    ports:
+      - "3000:80"
     depends_on:
       - simple-service
+    
