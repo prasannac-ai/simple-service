@@ -41,7 +41,10 @@ docker run -d -p 5001:5000 --name local-registry --restart=always registry:2
 docker tag  simple-service:v1 localhost:5001/simple-service:v1
 docker push localhost:5001/simple-service:v1
 ```
-
+### Connect a Docker container (local-registry) to the Docker network used by Kind
+```bash
+docker network connect kind local-registry
+```
 ### Look for images in registry
 ```bash
 curl http://localhost:5001/v2/_catalog
