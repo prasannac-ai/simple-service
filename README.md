@@ -29,7 +29,7 @@ docker run -p 8111:8111 simple-service
 
 ### Build versioned image
 ```bash
-docker build -t simple-service:v2 .
+docker build -t simple-service:v1 .
 ```
 ### Create Local Registry 
 ```bash
@@ -38,8 +38,8 @@ docker run -d -p 5001:5000 --name local-registry --restart=always registry:2
 
 ### Label and push versioned image to repository 
 ```bash
-docker tag  simple-service:v2 localhost:5001/simple-service:v2
-docker push localhost:5001/simple-service:v2
+docker tag  simple-service:v1 localhost:5001/simple-service:v1
+docker push localhost:5001/simple-service:v1
 ```
 
 ### Look for images in registry
